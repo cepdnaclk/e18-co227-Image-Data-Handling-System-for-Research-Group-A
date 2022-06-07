@@ -1,38 +1,31 @@
 {
     "team": [
         {
-            "name": "Team Member Name 1",
-            "email": "email@eng.pdn.ac.lk",
-            "eNumber": "E/yy/xxx"
+            "name": "Kavinda Karunarathna",
+            "email": "e18170@eng.pdn.ac.lk",
+            "eNumber": "E/18/170",
+            "github_profile":"https://github.com/kavindax"
         },
         {
-            "name": "Team Member Name 2",
-            "email": "email@eng.pdn.ac.lk",
-            "eNumber": "E/yy/xxx"
+            "name": "Denuwan Weerarathne",
+            "email": "e18382@eng.pdn.ac.lk",
+            "eNumber": "E/18/382",
+            "github_profile":"https://github.com/denuwan55"
         },
         {
-            "name": "Team Member Name 3",
-            "email": "email@eng.pdn.ac.lk",
-            "eNumber": "E/yy/xxx"
+            "name": "Nimuthu Wijerathne",
+            "email": "e18398@eng.pdn.ac.lk",
+            "eNumber": "E/18/398",
+            "github_profile":"https://github.com/NimuthuWijerathne"
         }
     ],
     "supervisors": [
         {
-            "name": "Dr. Supervisor 1",
-            "email": "email@eng.pdn.ac.lk"
-        },
-        {
-            "name": "Supervisor 2",
-            "email": "email@eng.pdn.ac.lk"
+          "name": "Dr. Isuru Nawinna",
+          "email": "isurunawinne@eng.pdn.ac.lk",
+          "linkedin_profile":"https://www.linkedin.com/in/isuru-nawinne-73302833/?originalSubdomain=lk",
+          "researchgate_profile":"https://www.researchgate.net/profile/Isuru-Nawinne"
         }
     ],
-    "publications": [
-        {
-            "title": "Paper Title",
-            "authors": "Person1, Person2, ...",
-            "venue": "Journal or Conference Name",
-            "doi": "#",
-        }
-    ],
-    "tags": ["Web", "Embedded Systems"]
+    "tags": ["Web Application", "Image Data Handling"]
 }
