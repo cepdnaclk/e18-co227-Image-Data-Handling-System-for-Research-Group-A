@@ -1,6 +1,8 @@
 ___
-# DELETE THIS INSTRUCTIONS AND ADD A SHORT INTRODUCTION ABOUT YOUR PROJECT
+IMAGE DATA HANDLING SYSTEM FOR RESEARCH
 ___
+
+This is a project to develop a web application to handle image data related to research and use it for any further needs.
 
 ## Please refer the instructions in below URL:
 
