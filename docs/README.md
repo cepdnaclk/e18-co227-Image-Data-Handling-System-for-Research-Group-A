@@ -31,6 +31,7 @@ title: Image Data Handling System for Research
 
  This project contains a web-based application that can be used to upload, annotate and store images with annotation data. Any 3rd party may access this annotation data through the API.
 
+![Laptop preview web app](https://user-images.githubusercontent.com/73521459/172680234-ecaf9f74-8cda-4a4a-87cc-fdd850d880c4.png)
 .....
 
 ## Links
