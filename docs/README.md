@@ -3,48 +3,43 @@ layout: home
 permalink: index.html
 
 # Please update this with your repository name and title
-repository-name: eYY-XXX-project-template
-title:
+repository-name: e18-co227-Image-Data-Handling-System-for-Research-Group-A
+title: Image Data Handling System for Research
 ---
 
-[comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
-
-# Project Title
+# Image Data Handling System for Research
 
 ---
 
-This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/)
+<!--- This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/)
 
-![Sample Image](./images/sample.png)
+![Sample Image](./images/sample.png) --->
 
 
 ## Team
--  eNumber, Name, [email](mailto:name@email.com)
--  eNumber, Name, [email](mailto:name@email.com)
--  eNumber, Name, [email](mailto:name@email.com)
+-  e18170, Kavinda Karunarathna, [email](mailto:e18170@eng.pdn.ac.lk)
+-  e18382, Denuwan Weerarathne, [email](mailto:e18382@eng.pdn.ac.lk)
+-  e18398, Nimuthu Wijerathne, [email](mailto:e18398@eng.pdn.ac.lk)
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Other Sub Topics](#other-sub-topics)
-3. [Links](#links)
+2. [Links](#links)
 
 ---
 
 ## Introduction
 
- description of the real world problem and solution, impact
-
-## Other Sub Topics
+ This project contains a web-based application that can be used to upload, annotate and store images with annotation data. Any 3rd party may access this annotation data through the API.
 
 .....
 
 ## Links
 
-- [Project Repository](https://github.com/cepdnaclk/{{ page.repository-name }}){:target="_blank"}
-- [Project Page](https://cepdnaclk.github.io/{{ page.repository-name}}){:target="_blank"}
+- [Project Repository](https://github.com/cepdnaclk/e18-co227-Image-Data-Handling-System-for-Research-Group-A)
+- [Project Page](https://cepdnaclk.github.io/e18-co227-Image-Data-Handling-System-for-Research-Group-A)
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
 - [University of Peradeniya](https://eng.pdn.ac.lk/)
 
 
-[//]: # (Please refer this to learn more about Markdown syntax)
-[//]: # (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+<!---[//]: # (Please refer this to learn more about Markdown syntax)
+[//]: # (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) --->
