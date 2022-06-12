@@ -14,4 +14,4 @@ How to annotate images, store and import them in digital format?
 This application is developed as an answer to the above question.
 It can be used for any research area. The image data can be imported and used in any other application.
 
-- <a href="[http://example.com/](https://cepdnaclk.github.io/e18-co227-Image-Data-Handling-System-for-Research-Group-A)" target="_blank">Project Page</a>
+- <a href="https://cepdnaclk.github.io/e18-co227-Image-Data-Handling-System-for-Research-Group-A" target="_blank">Project Page</a>
