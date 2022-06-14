@@ -35,6 +35,7 @@ title: Image Data Handling System for Research
 - [Project Page](https://cepdnaclk.github.io/e18-co227-Image-Data-Handling-System-for-Research-Group-A)
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
 - [University of Peradeniya](https://eng.pdn.ac.lk/)
+- [Main Project - Oral cavity](https://github.com/cepdnaclk/e17-co328-Oral-Cavity-Region-Detection/tree/main/backend/API%20design)
 
 ## Team
 -  e18170, Kavinda Karunarathna, [email](mailto:e18170@eng.pdn.ac.lk)
