@@ -2,10 +2,11 @@
   "name": "annotation-tool",
   "version": "1.0.0",
   "description": "A web application to annotate images for authorized personnal",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "author": "Group 09 (E/18/170, E/18/382, E/18/398)",
   "license": "ISC",
