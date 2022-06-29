@@ -8,10 +8,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+h2{
+    color: #fff;
+    font-size:230%;
+}
+
 .nav-bar{
     width: 100%;
     color: #FFF;
     padding: 12px;
+    margin: auto;
+    position: sticky;
+    top:0;
 
 }
 
@@ -20,7 +28,7 @@
     font-weight:900;
     font-size: 25px;
     float: left;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
 }
 
 .reg-button{
@@ -63,6 +71,7 @@
 .forms.show-signup .form.login{
     opacity: 0;
     pointer-events: none;
+    right: 80px;
 }
 header{
     font-size: 28px;
@@ -166,6 +175,21 @@ img.google-img{
     width: 20px;
     object-fit: cover;
 }
+
+img.vector-img{
+    height:350px;
+    width: auto;
+    position: absolute;
+    margin-top: 80px;
+
+}
+
+.design{
+    position: absolute;
+    left: 30px;
+    top: 100px;
+}
+
 a.google{
     border: 1px solid #CACACA;
 }
