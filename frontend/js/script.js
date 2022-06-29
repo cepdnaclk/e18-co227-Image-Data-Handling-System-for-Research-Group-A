@@ -1,4 +1,4 @@
-const forms = document.querySelector(".forms"),
+const forms = document.querySelector(".forms"),  //selecting 
       pwShowHide = document.querySelectorAll(".eye-icon"),
       links = document.querySelectorAll(".link");
 
