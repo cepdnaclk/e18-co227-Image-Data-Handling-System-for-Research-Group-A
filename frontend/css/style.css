@@ -10,7 +10,12 @@
 
 h2{
     color: #fff;
-    font-size:230%;
+    font-size:200%;
+}
+
+h4{
+    color: #fff;
+    font-size: 150%;
 }
 
 .nav-bar{
@@ -51,6 +56,7 @@ h2{
     justify-content: center;
     background-color: #4070f4;
     column-gap: 30px;
+    column-count: 2;
 }
 .form{
     position: absolute;
@@ -59,7 +65,9 @@ h2{
     padding: 30px;
     border-radius: 6px;
     background: #FFF;
+    right: 30px;
 }
+
 .form.signup{
     opacity: 0;
     pointer-events: none;
@@ -177,17 +185,29 @@ img.google-img{
 }
 
 img.vector-img{
-    height:350px;
+    height:450px;
     width: auto;
     position: absolute;
-    margin-top: 80px;
+}
+
+design-image{
+    padding: 15px;
+    margin: 50px;
 
 }
 
 .design{
     position: absolute;
-    left: 30px;
-    top: 100px;
+    left: 25px;
+    top: 70px;
+    width: 480px;
+    padding: 10px;
+}
+
+.design-text{
+    margin:15px;
+    padding: 5px;
+    overflow-wrap:break-word;
 }
 
 a.google{
