@@ -18,13 +18,14 @@ h4{
     font-size: 150%;
 }
 
-.nav-bar{
+
+.header{
     width: 100%;
-    color: #FFF;
-    padding: 12px;
-    margin: auto;
-    position: sticky;
+    background-color: #fff;
+    padding: 13px;
+    position: fixed;
     top:0;
+    height: auto;
 
 }
 
@@ -36,15 +37,22 @@ h4{
     /* margin-bottom: 12px; */
 }
 
+.column-left{
+    width: 50%;
+    float: left;
+}
+
+.column-right{
+    width: 50%;
+    float: left;
+}
+
 .reg-button{
-    float: right;
-    width:80px;
-    height: max-content;
-    border-radius: 6px;
-    border: none;
-    font-size: 12px;
-    font-weight: 400;
+    width:100px;
     outline: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 
@@ -60,12 +68,17 @@ h4{
 }
 .form{
     position: absolute;
-    max-width: 430px;
+    max-width: 500px;
     width: 100%;
     padding: 30px;
     border-radius: 6px;
     background: #FFF;
-    right: 30px;
+    right: 100px;
+}
+
+.form.small{
+    float: left !important;
+    width: 50% !important;
 }
 
 .form.signup{
@@ -111,6 +124,13 @@ form{
     padding: 0 15px;
     border: 1px solid#CACACA;
 }
+
+.signup-field{
+    padding: 0 5px !important;
+    height: 40px !important;
+
+}
+
 .field input:focus{
     border-bottom-width: 2px;
 }
@@ -185,29 +205,31 @@ img.google-img{
 }
 
 img.vector-img{
-    height:450px;
+    height:auto;
     width: auto;
     position: absolute;
+    left: 150px;
+    top: 300px;
 }
 
 design-image{
-    padding: 15px;
-    margin: 50px;
+    padding: 10px;
+    margin: 30px;
+    position: absolute;
+    top:100px;
 
 }
 
 .design{
-    position: absolute;
-    left: 25px;
-    top: 70px;
-    width: 480px;
-    padding: 10px;
+    width:700px;
+    padding:10px;
 }
 
 .design-text{
-    margin:15px;
-    padding: 5px;
-    overflow-wrap:break-word;
+    position: absolute;
+    top: 70px;
+    margin:30px;
+    padding: 10px;
 }
 
 a.google{
@@ -222,6 +244,9 @@ a.google span{
 @media screen and (max-width: 400px) {
     .form{
         padding: 20px 10px;
+    }
+    .column-left,  .column-right{
+        width: 100%;
     }
     
 }
