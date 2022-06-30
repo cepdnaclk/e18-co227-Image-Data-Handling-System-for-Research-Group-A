@@ -27,6 +27,6 @@ app.use('/api/admin', require('./routes/adminRoutes.js'))
 // user auth routes
 app.use('/api/users', require('./routes/userAuthRoutes.js'))
 
-// app.use(errorHandler)
 
-app.listen(port, () => console.log(`Server started on ${port}`));
+
+app.listen(port, () => console.log(`Server started on ${port}`.yellow));

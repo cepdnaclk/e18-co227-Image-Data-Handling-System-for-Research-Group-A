@@ -18,7 +18,7 @@ const getAllRequests = async(req, res)=>{
 const deleteRequest = async(req,res)=>{
     try{
         const request = await Request.findById(req.params.id)
-        // console.log(req.params.id)
+        
         if(request){
             try{
                 await Request.findByIdAndDelete(req.params.id)

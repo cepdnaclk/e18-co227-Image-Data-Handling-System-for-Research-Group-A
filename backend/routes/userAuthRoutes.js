@@ -35,11 +35,10 @@ router.post('/initial', async(req,res)=>{
 }) 
 */
 
-// user sign up
-// add to request list
+// sign up request 
 router.post("/signup", registerUser);
 
-// sign in
+// log in
 router.post("/login", loginUser)
 
 module.exports = router;
