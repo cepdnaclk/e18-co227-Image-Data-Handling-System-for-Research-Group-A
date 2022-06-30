@@ -15,12 +15,6 @@ title: Image Data Handling System for Research
 
 ![Sample Image](./images/sample.png) --->
 
-
-## Team
--  e18170, Kavinda Karunarathna, [email](mailto:e18170@eng.pdn.ac.lk)
--  e18382, Denuwan Weerarathne, [email](mailto:e18382@eng.pdn.ac.lk)
--  e18398, Nimuthu Wijerathne, [email](mailto:e18398@eng.pdn.ac.lk)
-
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Links](#links)
@@ -30,6 +24,8 @@ title: Image Data Handling System for Research
 ## Introduction
 
  This project contains a web-based application that can be used to upload, annotate and store images with annotation data. Any 3rd party may access this annotation data through the API.
+![Web app preview](https://user-images.githubusercontent.com/73521459/172683464-d926ff2f-a13c-48bf-adc1-687a432e5c1f.png)
+
 
 .....
 
@@ -39,6 +35,13 @@ title: Image Data Handling System for Research
 - [Project Page](https://cepdnaclk.github.io/e18-co227-Image-Data-Handling-System-for-Research-Group-A)
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
 - [University of Peradeniya](https://eng.pdn.ac.lk/)
+- [Main Project - Oral cavity](https://github.com/cepdnaclk/e17-co328-Oral-Cavity-Region-Detection/tree/main)
+
+## Team
+-  e18170, Kavinda Karunarathna, [email](mailto:e18170@eng.pdn.ac.lk)
+-  e18382, Denuwan Weerarathne, [email](mailto:e18382@eng.pdn.ac.lk)
+-  e18398, Nimuthu Wijerathne, [email](mailto:e18398@eng.pdn.ac.lk)
+
 
 
 <!---[//]: # (Please refer this to learn more about Markdown syntax)

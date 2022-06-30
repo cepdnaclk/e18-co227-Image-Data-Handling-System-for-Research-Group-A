@@ -25,6 +25,10 @@
           "email": "isurunawinne@eng.pdn.ac.lk",
           "linkedin_profile":"https://www.linkedin.com/in/isuru-nawinne-73302833/?originalSubdomain=lk",
           "researchgate_profile":"https://www.researchgate.net/profile/Isuru-Nawinne"
+        },
+        {
+          "name": "Keshara Weerasinghe",
+          "email": "kesharaw@eng.pdn.ac.lk"
         }
     ],
     "tags": ["Web Application", "Image Data Handling"]
