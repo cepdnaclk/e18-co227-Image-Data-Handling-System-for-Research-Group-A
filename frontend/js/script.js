@@ -1,3 +1,5 @@
+import 'boxicons';
+
 const forms = document.querySelector(".forms"),  //selecting 
       pwShowHide = document.querySelectorAll(".eye-icon"),
       links = document.querySelectorAll(".link");
@@ -17,8 +19,42 @@ pwShowHide.forEach(eyeIcon => {
         })
         
     })
-})      
+})
 
+const clearIcon = document.querySelector(".clear-icon");
+  const searchBar = document.querySelector(".search");
+
+  searchBar.addEventListener("keyup", () => {
+    if(searchBar.value && clearIcon.style.visibility != "visible"){
+      clearIcon.style.visibility = "visible";
+    } else if(!searchBar.value) {
+      clearIcon.style.visibility = "hidden";
+    }
+  });
+
+  clearIcon.addEventListener("click", () => {
+    searchBar.value = "";
+    clearIcon.style.visibility = "hidden";
+  })
+
+/* var button = getElementById("LoginForm").getElementById("signup");
+button.onclick = function(){
+        var username = LoginForm.getElementById("name").innerHTML;
+        window.location.href = "Main.html";
+        window.alert("hello");
+        document.getElementById("displayname").innerHTML = username;
+        
+} */
+
+
+
+function signup(){
+    var name = document.querySelector(".username").innerHTML;
+    window.location.href = "Main.html";
+    document.querySelector(".displayname").innerHTML = name;
+
+    
+}
 /* links.forEach(link => {
     link.addEventListener("click", e => {
        e.preventDefault(); //preventing form submit

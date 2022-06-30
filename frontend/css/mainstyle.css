@@ -42,22 +42,22 @@
 
 .buttons{
     float: left;
-    width: 70%;
+    width: 60%;
     padding: 20px 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-wrap:wrap;
+    justify-content:first baseline;
     align-items: center;
     flex-shrink: 1;
 } 
 
 .buttons button{
-    padding: 2em 4em 2em 4em;
+    padding: 3em 4em 3em 4em;
     margin: 2em 3em 2em 3em;
     justify-content: center;
     font-size: large;
     background-color: #FFF;
-    border-radius: 0.4em;
+    border-radius: 0.5em;
     transition: color 0.25s, border-color 0.25s, box-shadow 0.25s,transform 0.25s;
     border: none;
 }
@@ -70,7 +70,10 @@
 
 #btn-help{
     padding: 1em 2em 1em 2em;
-    margin: 1em 1em 1em 1em;
+    margin: 2em 2em 2em 2em;
+    display: block;
+    justify-content: center !important;
+    transform: translate(130%);
 }
 
 .buttons button:hover{

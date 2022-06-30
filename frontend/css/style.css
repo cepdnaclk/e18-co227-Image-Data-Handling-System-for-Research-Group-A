@@ -241,6 +241,48 @@ a.google span{
     color: #232836;
 }
 
+.search-bar{
+    display: flex;
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    padding: 10px;
+      
+
+}
+.search-icon {
+    position: absolute;
+    top: 12px;
+    width: 18px;
+    margin: 10px 10px;
+  }
+
+.clear-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 10px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.search {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 32px;
+    width: 100%;
+    padding: 10px 35px 10px 20px;
+    outline: 0;
+    background-color: #f5f5f5;
+    margin: 5px;
+
+}
+
+  .search:hover, .search:focus {
+    border: 1.5px solid #009688;
+    background-color: white;
+}
+
 @media screen and (max-width: 400px) {
     .form{
         padding: 20px 10px;

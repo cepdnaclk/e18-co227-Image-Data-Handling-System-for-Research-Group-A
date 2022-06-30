@@ -36,10 +36,10 @@
             <div class="form login column-right">
                 <div class="form-content">
                     <header>Create an account</header>
-                    <form action="#">
+                    <form action="Main.html" method="POST" id="LoginForm">
 
                         <div class="field input-field signup-field">
-                            <input type="name" placeholder="First Name" class="input small">
+                            <input type="name" placeholder="First Name" class="input small" id="username">
                         </div>
 
                         <div class="field input-field signup-field">
@@ -69,7 +69,9 @@
                         </div>
 
                         <div class="field button-field">
-                            <button>Sign up</button>
+                            <span>
+                                    <button onclick = "signup()" id="signup">Sign up</button>
+                            </span>
                         </div>
                     </form>
 
