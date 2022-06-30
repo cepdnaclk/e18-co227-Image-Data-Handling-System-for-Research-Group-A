@@ -22,8 +22,10 @@ app.use(express.urlencoded({extended: false}))
 // app.use('/api/consultants', require('./routes/consultantRoutes.js'))
 // // doctor routes
 // app.use('/api/doctors', require('./routes/doctorRoutes.js'))
-// // admin routes
-// app.use('/api/admin', require('./routes/adminRoutes.js'))
+// admin routes
+app.use('/api/admin', require('./routes/adminRoutes.js'))
+// user auth routes
+app.use('/api/users', require('./routes/userAuthRoutes.js'))
 
 // app.use(errorHandler)
 
