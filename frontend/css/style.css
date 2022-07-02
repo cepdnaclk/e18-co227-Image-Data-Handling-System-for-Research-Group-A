@@ -1,5 +1,7 @@
-
+/* importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
 *{
     margin: 0;
@@ -8,9 +10,28 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color: #016dcb;
+}
+
+/* headings */
+
+h1{
+    color: #fff;
+    font-size:300%;
+}
+
 h2{
     color: #fff;
     font-size:200%;
+}
+
+h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 h4{
@@ -18,23 +39,62 @@ h4{
     font-size: 150%;
 }
 
+h6{
+    font-size: 14px;
+    font-weight: 400;
+    color:#016dcb;
+}
+
+/* alignments & layout */
+
+.right-align{
+    float:right;
+    
+}
+
+.center-align{
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 5%);
+    
+}
+
+.normal-padd{
+    padding: 15px;
+    margin: 10px;
+}
+
+
+/* section (div) properties, layout */
 
 .header{
     width: 100%;
     background-color: #fff;
-    padding: 13px;
     position: fixed;
     top:0;
     height: auto;
+    font-size: x-large;
+    padding: 10px 10px;
 
 }
 
-.logo{
-    color: #016dcb;
-    font-weight:900;
-    font-size: 25px;
-    float: left;
-    /* margin-bottom: 12px; */
+.description{
+    width:50%;
+    padding:20px;
+    position: absolute;
+    top: 70px;
+    margin: 30px;
+
+}
+
+.design{
+    width:50%;
+    padding:10px;
+    position: absolute;
+    left: 150px;
+    top: 250px;
+    height:auto;
+    margin:15px;
 }
 
 .column-left{
@@ -44,132 +104,173 @@ h4{
 
 .column-right{
     width: 50%;
+    float: right;
+}
+
+.mainpagefunctions{
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    width: 40%;
+    padding: 15px 15px;
+    display: flex;
+    flex-wrap:wrap; 
+    justify-content:first baseline; 
+    /* align-items: center; */
+    text-align: center;
+    flex-shrink: 1; 
+}
+
+/* text properties */
+
+.logo{
+    color: #016dcb;
+    font-weight:900;
+    font-size: 30px;
     float: left;
 }
 
-.reg-button{
-    width:100px;
-    outline: none;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+.heading p {
+    color: rgb(223, 219, 219);
 }
 
 
-.container{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #4070f4;
-    column-gap: 30px;
-    column-count: 2;
-}
-.form{
-    position: absolute;
-    max-width: 500px;
-    width: 100%;
-    padding: 30px;
-    border-radius: 6px;
-    background: #FFF;
-    right: 100px;
-}
+/* additional components */
 
-.form.small{
-    float: left !important;
-    width: 50% !important;
-}
-
-.form.signup{
-    opacity: 0;
-    pointer-events: none;
-}
-.forms.show-signup .form.signup{
-    opacity: 1;
-    pointer-events: auto;
-}
-.forms.show-signup .form.login{
-    opacity: 0;
-    pointer-events: none;
-    right: 80px;
-}
-header{
-    font-size: 28px;
-    font-weight: 600;
-    color: #232836;
+/* buttons */
+button{
     text-align: center;
+    justify-content: center;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s,transform 0.25s;
+    border: none; 
+} 
+
+button.normal{
+    padding: 8px 13px;
+    border-radius: 0.5em;
+    margin: 5px;
 }
-form{
-    margin-top: 30px;
+
+button.tile{
+    padding: 45px 45px;
+    border-radius: 1em;
+    margin: 30px;
 }
-.form .field{
+
+button.small{
+    font-size: medium;
+    width:max-content;
+    height: auto;
+
+}
+
+button.medium{
+    font-size: large;
+    width: max-content;
+    height: 100%;
+}
+
+button.large{
+    font-size: x-large;
+    width: 8em;
+    height:7em;
+
+}
+
+button.var1{
+    background-color: #fff;
+    color: #016dcb;
+
+}
+
+button.var2{
+    background-color: #016dcb;
+    color: #fff;
+    border:#fff;
+    border-width: 0.3em;
+}
+
+.help-button{
     position: relative;
+    left: 34%;
+    margin-top: 50px !important;
+}
+
+button.tile:hover{
+  background-color:#F7D0E2;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+  box-shadow: 0 0.5em 0.5em -0.4em #000000;
+}
+
+button.normal:hover{
+    cursor: pointer;
+    box-shadow: 0 0.5em 0.5em -0.4em #000000;
+}
+
+.search-bar{
+    display: flex;
+    position: absolute;
+    right:85px;
+    top: 8px;
+    padding: 8px;
+      
+}
+
+.search {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 32px;
+    width: 80%;
+    padding: 10px 35px 10px 30px;
+    outline: 0;
+    background-color: #f5f5f5;
+    margin: 5px;
+
+}
+
+  .search:hover, .search:focus {
+    border: 1.5px solid #009688;
+    background-color: white;
+}
+
+form{
+    padding-right: 20px;
+    height: fit-content;
+}
+.box{
+    background: #FFF;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    float: right;
+    position: relative;
+    right: 50px;
+    top:70px;
+    width: 100%;
+    max-width: 500px;
+    height:fit-content;
+}
+
+
+.input{
     height: 50px;
     width: 100%;
-    margin-top: 20px;
-    border-radius: 6px;
-}
-.field input,
-.field button{
-    height: 100%;
-    width: 100%;
-    border: none;
+    position: relative;
     font-size: 16px;
     font-weight: 400;
+    border: 1px solid#CACACA;
     border-radius: 6px;
-}
-.field input{
     outline: none;
     padding: 0 15px;
-    border: 1px solid#CACACA;
+    margin: 10px;
 }
 
-.signup-field{
-    padding: 0 5px !important;
-    height: 40px !important;
 
-}
-
-.field input:focus{
+.input:focus{
     border-bottom-width: 2px;
 }
-.eye-icon{
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: #8b8b8b;
-    cursor: pointer;
-    padding: 5px;
-}
-.field button{
-    color: #fff;
-    background-color: #0171d3;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.field button:hover{
-    background-color: #016dcb;
-}
-.form-link{
-    text-align: center;
-    margin-top: 10px;
-}
-.form-link span,
-.form-link a{
-    font-size: 14px;
-    font-weight: 400;
-    color: #232836;
-}
-.form a{
-    color: #0171d3;
-    text-decoration: none;
-}
-.form-content a:hover{
-    text-decoration: underline;
-}
+
 .line{
     position: relative;
     height: 1px;
@@ -187,18 +288,27 @@ form{
     color: #8b8b8b;
     padding: 0 15px;
 }
-.media-options a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+
+/* icons and images */
+.eye-icon{
+    /* position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    
+    size: 130%;
+    padding: 5px;*/
+    color: #8b8b8b;
+    /* margin-right:30px;  */
+    cursor: pointer;
 }
+
 img.google-img{
     position: absolute;
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
-}
-img.google-img{
     height: 20px;
     width: 20px;
     object-fit: cover;
@@ -207,30 +317,45 @@ img.google-img{
 img.vector-img{
     height:auto;
     width: auto;
-    position: absolute;
-    left: 150px;
-    top: 300px;
-}
-
-design-image{
     padding: 10px;
-    margin: 30px;
-    position: absolute;
-    top:100px;
-
+    margin: 10px;
 }
 
-.design{
-    width:700px;
-    padding:10px;
+.search-icon {
+    position: relative;
+    left: 38px;
+    width: 16px;
+    margin: 10px 10px 10px 10px;
+  }
+
+.clear-icon {
+    position: relative;
+    right: 25px;
+    width: 16px;
+    cursor: pointer;
+    visibility: hidden;
 }
 
-.design-text{
-    position: absolute;
-    top: 70px;
-    margin:30px;
-    padding: 10px;
+/* links */
+
+.forgot-pass{
+    text-align: center;
+    margin: 10px;
+    transform:  translate(0, 80px);
 }
+
+a{
+    color: #0171d3;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+a:hover{
+    color: #000000;
+    cursor: pointer;
+    
+}
+
 
 a.google{
     border: 1px solid #CACACA;
@@ -241,47 +366,14 @@ a.google span{
     color: #232836;
 }
 
-.search-bar{
+
+
+.media-options a{
     display: flex;
-    position: absolute;
-    right: 8px;
-    top: 10px;
-    padding: 10px;
-      
-
-}
-.search-icon {
-    position: absolute;
-    top: 12px;
-    width: 18px;
-    margin: 10px 10px;
-  }
-
-.clear-icon {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 10px;
-    cursor: pointer;
-    visibility: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
-.search {
-    border: 1px solid grey;
-    border-radius: 5px;
-    height: 32px;
-    width: 100%;
-    padding: 10px 35px 10px 20px;
-    outline: 0;
-    background-color: #f5f5f5;
-    margin: 5px;
-
-}
-
-  .search:hover, .search:focus {
-    border: 1.5px solid #009688;
-    background-color: white;
-}
 
 @media screen and (max-width: 400px) {
     .form{

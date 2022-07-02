@@ -17,62 +17,47 @@
         <!--The top bar-->
         <section class="header">
             <div class="logo">ImageR</div>
-            <div class="field button-field reg-button">
-                <a href="signup.html"><button>Sign up</button></a>
+            <div class="right-align">
+                <a href="signup.html"><button class="small var2 normal">Sign up</button></a>
             </div>
-        <!--description about site-->
-        </section>
-        <section class="description">
-            <div class="design design-text">
-                <h2>Leave your images to us</h2>
-                <h4>Upload, Store and Annotate images in your Research</h4>
+    </section>
+
+    <!--description about site-->
+    <section class="description">
+        <h2>Leave your images to us</h2>
+        <h4>Upload, Store and Annotate images in your Research</h4>
+    </section>
+
+    <!--design-->
+    <section class="design column-left">
+        <img src="images/vector.png" alt="vector design" class="vector-img">  
+    </section>
+
+    <!-- form -->
+    <section class="box column-right">
+        <h3>Login</h3>
+        <form action="Main.html" method="POST">
+
+            <input type="email" placeholder="Email" class="input">
+                    
+            <input type="password" placeholder="Password" class="input password">
+            <i class='bx bx-hide eye-icon'></i>
+
+            <div class="center-align normal-padd">
+                <button onclick = "signup()" class="normal var2 medium">Login</button>
             </div>
-        </section>
-        <!--design and form section (main content)-->
-        <section class="container forms">
-            <div class="design design-image column-left">
-                <img src="images/vector.png" alt="vector design" class="vector-img">  
+
+            <div class="forgot-pass">
+                <a href="#">Forgot password?</a>
             </div>
-            <div class="form login column-right">
-                <div class="form-content">
-                    <header>Login</header>
-                    <form action="#">
-                        <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
-                        </div>
 
-                        <div class="field input-field">
-                            <input type="password" placeholder="Password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
-                        </div>
+        </form>
 
-                        <div class="form-link">
-                            <a href="#" class="forgot-pass">Forgot password?</a>
-                        </div>
-
-                        <div class="field button-field">
-                            <button>Login</button>
-                        </div>
-                    </form>
-
-                    <div class="form-link">
-                        <span>Don't have an account? <a href="signup.html" class="link signup-link">Signup</a></span>
-                    </div>
-                </div>
-
-                <!-- <div class="line"></div>
-
-            
-
-                <div class="media-options">
-                    <a href="#" class="field google">
-                        <img src="images/google.png" alt="" class="google-img">
-                        <span>Login with Google</span>
-                    </a>
-                </div> -->
-
+        <div class="normal-padd"><br><br><br>
+            Don't have an account?<a href="signup.html">Sign up</a>
             </div>
-        </section>
+
+    </section>
 
         <!-- JavaScript -->
         <script src="js/script.js"></script>

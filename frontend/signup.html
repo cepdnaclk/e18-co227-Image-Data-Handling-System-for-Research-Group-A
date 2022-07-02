@@ -10,91 +10,78 @@
         <link rel="stylesheet" href="css/style.css">
                 
         <!-- Boxicons CSS -->
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <!-- <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
                         
     </head>
+
     <body>
         <!--The top bar-->
         <section class="header">
             <div class="logo">ImageR</div>
-            <div class="field button-field reg-button">
-                <a href="login.html"><button>Log in</button></a>
+            <div class="right-align">
+                <a href="login.html"><button class="small var2 normal">Log in</button></a>
             </div>
+
         <!--description about site-->
         </section>
         <section class="description">
-            <div class="design design-text">
-                <h2>Leave your images to us</h2>
-                <h4>Upload, Store and Annotate images in your Research</h4>
-            </div>
+            <h2>Leave your images to us</h2>
+            <h4>Upload, Store and Annotate images in your Research</h4>
         </section>
-        <!--design and form section (main content)-->
-        <section class="container forms">
-            <div class="design design-image column-left">
-                <img src="images/vector.png" alt="vector design" class="vector-img">  
-            </div>
-            <div class="form login column-right">
-                <div class="form-content">
-                    <header>Create an account</header>
-                    <form action="Main.html" method="POST" id="LoginForm">
 
-                        <div class="field input-field signup-field">
-                            <input type="name" placeholder="First Name" class="input small" id="username">
-                        </div>
+        <!--design-->
+        <section class="design column-left">
+            <img src="images/vector.png" alt="vector design" class="vector-img">  
+        </section>
 
-                        <div class="field input-field signup-field">
-                            <input type="name" placeholder="Last Name" class="input small">
-                        </div>
+        <!-- form -->
+        <section class="box column-right">
 
-                        <div class="field input-field signup-field">
-                            <input type="role" placeholder="Role" class="input">
-                        </div>
+            <h3>Create an account</h3>
 
-                        <div class="field input-field signup-field">
-                            <input type="email" placeholder="Email" class="input">
-                        </div>
+            <form action="Main.html" method="POST" id="LoginForm">
 
-                        <div class="field input-field signup-field">
-                            <input type="password" placeholder="Password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
-                        </div>
+                <input type="fname" placeholder="First Name" class="input" id="fname">
 
-                        <div class="field input-field signup-field">
-                            <input type="password" placeholder="Confirm Password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
-                        </div>
+                <input type="lname" placeholder="Last Name" class="input">
+                    
+                <select name="role" placeholder="Consultant" class="input">
+                    <option value="consultant">Consultant</option>
+                    <option value="admin">Admin</option>
+                </select>
+        
+                <input type="email" placeholder="Email" class="input">
+                    
+                <div>
+                    <input type="password" placeholder="Password" class="input password">
+                    <!-- <i class='bx bx-hide eye-icon'></i> -->
+                    <!-- <i class='far fa-eye eye-icon'></i> -->
+                </div>
+                        
+                <input type="password" placeholder="Confirm Password" class="input password">
+                <!-- <i class='bx bx-hide eye-icon'></i> -->
 
-                        <div class="form-link">
-                            <a href="#" class="forgot-pass">Forgot password?</a>
-                        </div>
-
-                        <div class="field button-field">
-                            <span>
-                                    <button onclick = "signup()" id="signup">Sign up</button>
-                            </span>
-                        </div>
-                    </form>
-
-                    <div class="form-link">
-                        <span>Have an account already? <a href="login.html" class="link login-link">Log in</a></span>
-                    </div>
+                <div class="center-align normal-padd">
+                    <button onclick = "signup()" class="normal var2 medium">Sign up</button>
+                </div>
+                        
+                <div class="forgot-pass">
+                    <a href="#">Forgot password?</a>
                 </div>
 
-                <!-- <div class="line"></div>
 
-            
+            </form>
 
-                <div class="media-options">
-                    <a href="#" class="field google">
-                        <img src="images/google.png" alt="" class="google-img">
-                        <span>Login with Google</span>
-                    </a>
-                </div> -->
-
+            <div class="normal-padd"><br><br><br>
+                Have an account already? <a href="login.html">Log in</a>
             </div>
+
         </section>
 
         <!-- JavaScript -->
         <script src="js/script.js"></script>
+        
     </body>
 </html>

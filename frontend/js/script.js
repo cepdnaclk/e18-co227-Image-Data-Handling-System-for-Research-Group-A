@@ -1,4 +1,4 @@
-import 'boxicons';
+
 
 const forms = document.querySelector(".forms"),  //selecting 
       pwShowHide = document.querySelectorAll(".eye-icon"),
@@ -49,9 +49,9 @@ button.onclick = function(){
 
 
 function signup(){
-    var name = document.querySelector(".username").innerHTML;
     window.location.href = "Main.html";
-    document.querySelector(".displayname").innerHTML = name;
+    var name = document.getElementById("fname").value;
+    document.getElementById("displayname").innerText = name;
 
     
 }
