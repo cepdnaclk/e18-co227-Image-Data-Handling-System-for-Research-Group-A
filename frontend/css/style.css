@@ -238,6 +238,11 @@ form{
     padding-right: 20px;
     height: fit-content;
 }
+
+#displayname{
+    visibility: hidden;
+}
+
 .box{
     background: #FFF;
     margin: 20px;
