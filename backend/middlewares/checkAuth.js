@@ -1,8 +1,14 @@
-// authentication middleware
+/* 
+ * Project: CO227 Computer Engineering Project
+ * Github Repository: https://github.com/e18-co227-Image-Data-Handling-System-for-Research-Group-A
+ * Authors: 
+ *  - Kavinda Karunarathne (E/18/170)
+ *  - Denuwan Weerarathne (E/18/382)
+ *  - Nimuthu Wijerathne (E/18/398)
+ */
+
 const jwt = require('jsonwebtoken')
 const User = require('../models/userModel');
-
-
 
 const authenticateToken = async(req, res , next) =>{
     
@@ -15,11 +21,6 @@ const authenticateToken = async(req, res , next) =>{
             decoded = jwt.verify(token,process.env.JWT_SECRET );
             
             const user = await User.findOne({email: decoded.email}).select('-password');
-            // console.log(user);
-            // console.log(user.email)
-            // console.log(email)
-            // console.log(JSON.stringify(user.role))
-            // console.log(JSON.stringify(user.role) !== JSON.stringify(decoded.role))
             
             if(!user || user.email !== email || JSON.stringify(user.role) !== JSON.stringify(decoded.role)){
                 return  res.status(401).json({
