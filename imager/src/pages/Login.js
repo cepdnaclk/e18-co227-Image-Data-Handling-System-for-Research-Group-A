@@ -1,7 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Login() {
+    // const initialValues = { email: "", password: "" };
+    // const [formValues, setFormValues] = useState(initialValues);
+
+    // const handleChange = (e) => {
+    //     // console.log(e.target);
+    //     const { name, value } = e.target;
+    //     setFormValues({formValues, [name]: value});
+    //     console.log(formValues);
+    // };
+
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    // };
+
+
+
+
+
   return (
     <React.Fragment> 
         <section className="header">
@@ -21,12 +39,17 @@ export default function Login() {
         </section>
 
         <section className="box column-right">
+        {/* <pre>{JSON.stringify(formValues, undefined, 1)}</pre> */}
             <h3>Login</h3>
-            <form action="Home.html" method="POST">
+            <form onSubmit="#" action="Home.html" method="POST">
 
-                <input type="email" placeholder="Email" className="input" />
+                <input type="email" placeholder="Email" className="input" 
+                //  value={formValues.email} onChange={handleChange}
+                />
                     
-                <input type="password" placeholder="Password" className="input" />
+                <input type="password" placeholder="Password" className="input" 
+                //  value={formValues.password} onChange={handleChange}
+                 />
                 <i className='bx bx-hide eye-icon'></i>
 
                 <div className="center-align normal-padd">

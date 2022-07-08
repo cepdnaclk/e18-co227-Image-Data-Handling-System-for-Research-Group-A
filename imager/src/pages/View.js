@@ -1,12 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Home() {
+export default function View() {
   return (
-
     <React.Fragment>
-
-        <section className="header">
+      <section className="header">
             <div className="logo">ImageR</div>
 
             <div className="search-bar">
@@ -20,26 +18,22 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="description">
-            <h2>Leave your images to us</h2>
-            <h4>Upload, Store and Annotate images in your Research</h4>
+        <section className="description-main">
+          <h2 align="center">View Images</h2>
         </section>
 
-        <section className="design column-left">
-            <img src="assets/images/vector.png" alt="vector design" className="vector-img" />
+        <section className="select-images">
+         <label>Select Category</label>
+          <select name="category" placeholder="Mouth" className="input">
+            <option value="mouth">Mouth</option>
+            <option value="teeth">Teeth</option>
+            <option value='lips'>Lips</option>
+          </select>
         </section>
-              
-        <section>
-            <div className="mainpagefunctions">
-                <Link to="/Upload"><button className="tile large var1">Get image</button></Link>
-                <Link to="/View"><button className="tile large var1">View</button></Link>
-                <button className="tile large var1">Annotate</button>
-                <button className="tile large var1">Export</button>
-                <br />
-                    <button className="button normal var1 medium help-button">Need Help?</button>
-                </div>
-        </section>
+        
+    
     </React.Fragment>
+    
 
   )
 }

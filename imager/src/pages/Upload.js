@@ -1,12 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Home() {
+export default function Upload() {
   return (
-
     <React.Fragment>
-
-        <section className="header">
+      <section className="header">
             <div className="logo">ImageR</div>
 
             <div className="search-bar">
@@ -20,26 +18,32 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="description">
-            <h2>Leave your images to us</h2>
-            <h4>Upload, Store and Annotate images in your Research</h4>
+        <section className="description-main">
+          <h2 align="center">Upload Images</h2>
+        </section>
+        
+        <section className='upload-area'>
+          <h5>Upload from your computer</h5>
+          <button className='normal medium var2'>Browse</button>
+          <br />
+          <h5>Or drag and drop here</h5>
+          <img src="assets/images/upload.png" className='cross-image' alt="upload-images"></img>
         </section>
 
-        <section className="design column-left">
-            <img src="assets/images/vector.png" alt="vector design" className="vector-img" />
+        <section className="details">
+          <label>Type all labels, seperated by commas</label>
+          <input type="text" placeholder='Labels' className='input'></input>
+          <label>Select Category</label>
+          <select name="category" placeholder="Mouth" className="input">
+            <option value="mouth">Mouth</option>
+            <option value="teeth">Teeth</option>
+            <option value='lips'>Lips</option>
+          </select>
+          <button className='var1 normal medium center'>Upload</button>
         </section>
-              
-        <section>
-            <div className="mainpagefunctions">
-                <Link to="/Upload"><button className="tile large var1">Get image</button></Link>
-                <Link to="/View"><button className="tile large var1">View</button></Link>
-                <button className="tile large var1">Annotate</button>
-                <button className="tile large var1">Export</button>
-                <br />
-                    <button className="button normal var1 medium help-button">Need Help?</button>
-                </div>
-        </section>
+
+        
     </React.Fragment>
-
+    
   )
 }

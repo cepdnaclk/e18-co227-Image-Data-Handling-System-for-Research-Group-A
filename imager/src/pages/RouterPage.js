@@ -4,6 +4,8 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Home from './Home'
 import Signup from './Signup'
 import Login from './Login'
+import Upload from './Upload'
+import View from './View'
 
 
 export default function RouterPage() {
@@ -14,6 +16,8 @@ export default function RouterPage() {
                 <Route path="/" exact element={ <Home />} />
                 <Route path="/Signup" element= { <Signup />} />
                 <Route path="/Login" element= { <Login />} />
+                <Route path="/Upload" element = { <Upload />} />
+                <Route path="/View" element = { <View/>} />
             </Routes>
         </Router>
     </div>
