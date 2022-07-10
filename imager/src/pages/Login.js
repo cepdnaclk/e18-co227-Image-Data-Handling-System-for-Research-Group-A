@@ -1,21 +1,33 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
+import { Link ,useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import Axios from 'axios'
 
 export default function Login() {
-    // const initialValues = { email: "", password: "" };
-    // const [formValues, setFormValues] = useState(initialValues);
 
-    // const handleChange = (e) => {
-    //     // console.log(e.target);
-    //     const { name, value } = e.target;
-    //     setFormValues({formValues, [name]: value});
-    //     console.log(formValues);
-    // };
+    const [password,setpassword] = useState("");
+    const [email,setemail ]= useState("");
+    const navigate = useNavigate()
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    // };
+    
+   const  loginsubmit = () =>{
+        console.log(`email: ${email}  password ${password} `)
+        Axios.post("http://localhost:5000/testapi/",{email:email,password:password})
+        .then(function(response){
+            console.log(response);
+            navigate('/')
+            
+        })
+        .catch((e)=>console.log(e)) 
 
+   }
+
+    // useEffect(()=>{
+    //     // Axios.post("http://localhost:5000/testapi/",{hello:123})
+    //     // .then(()=>console.log("quaery sent"))
+    //     // .catch((e)=>console.log(e)) 
+    //     console.log(password)
+    // },[])
 
 
 
@@ -39,28 +51,26 @@ export default function Login() {
         </section>
 
         <section className="box column-right">
-        {/* <pre>{JSON.stringify(formValues, undefined, 1)}</pre> */}
             <h3>Login</h3>
-            <form onSubmit="#" action="Home.html" method="POST">
+            <div id="loginform" >
 
-                <input type="email" placeholder="Email" className="input" 
-                //  value={formValues.email} onChange={handleChange}
-                />
+                <input id="email" type="email" name ="email" placeholder="Email" className="input"
+                onChange={(e)=> setemail(e.target.value)} />
                     
-                <input type="password" placeholder="Password" className="input" 
-                //  value={formValues.password} onChange={handleChange}
-                 />
+                <input id="password" type="password" name="password" placeholder="Password" className="input" 
+                 onChange={(e)=> setpassword(e.target.value)}/>
                 <i className='bx bx-hide eye-icon'></i>
 
                 <div className="center-align normal-padd">
-                    <button onclick = "signup()" className="normal var2 medium">Login</button>
+                    <button type='submit' className="normal var2 medium"
+                    onClick={loginsubmit}>Login</button>
                 </div>
 
                 <div className="forgot-pass">
                     <a href="#">Forgot password?</a>
                 </div>
 
-            </form>
+            </div>
 
             <div className="extra">
             Don't have an account?<Link to="/Signup">Sign up</Link>

@@ -3,10 +3,12 @@ import RouterPage from './pages/RouterPage';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Upload from './pages/Upload';
-import View from './pages/View';
+import { useState ,useEffect } from 'react';
 
 function App() {
+
+
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -14,8 +16,6 @@ function App() {
           <Home />
           <Signup />
           <Login />
-          <Upload />
-          <View />
         </RouterPage>
       </header>
     </div>
