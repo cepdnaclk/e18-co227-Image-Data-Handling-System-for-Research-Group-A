@@ -1,4 +1,4 @@
-import 'boxicons';
+
 
 const forms = document.querySelector(".forms"),  //selecting 
       pwShowHide = document.querySelectorAll(".eye-icon"),
@@ -22,7 +22,7 @@ pwShowHide.forEach(eyeIcon => {
 })
 
 const clearIcon = document.querySelector(".clear-icon");
-  const searchBar = document.querySelector(".search");
+const searchBar = document.querySelector(".search");
 
   searchBar.addEventListener("keyup", () => {
     if(searchBar.value && clearIcon.style.visibility != "visible"){
@@ -46,12 +46,19 @@ button.onclick = function(){
         
 } */
 
+const firstName = document.querySelector("#fname").value;
+const outputName = document.querySelector("#displayname");
+const submitButton = document.querySelector("#submitButton");
 
+submitButton.addEventListener("click", () => {
+  outputName.value = firstName;
+  outputName.style.visibility = "visible";
+})
 
-function signup(){
-    var name = document.querySelector(".username").innerHTML;
-    window.location.href = "Main.html";
-    document.querySelector(".displayname").innerHTML = name;
+// function signup(){
+//     window.location.href = "Main.html";
+//     var name = document.getElementById("fname").value;
+//     document.getElementById("displayname").innerText = name;
 
     
 }
