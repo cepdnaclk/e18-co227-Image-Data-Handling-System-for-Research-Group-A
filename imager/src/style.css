@@ -129,7 +129,7 @@ h6{
     position: absolute;
     top: 150px;
     right: 30px;
-    width: 40%;
+    width: 45%;
     padding: 15px 15px;
     display: flex;
     flex-wrap:wrap; 
@@ -137,6 +137,21 @@ h6{
     /* align-items: center; */
     text-align: center;
     flex-shrink: 1; 
+}
+
+#editordiv{
+    display: flex;
+    width: 60%;
+    margin: 30px 30px ;
+    justify-content:space-between;
+    align-content: center;
+
+}
+#editor{
+    margin-top: 50px;
+    margin-left: 50px;
+    display: block;
+    width:100vh;
 }
 
 /* text properties */
