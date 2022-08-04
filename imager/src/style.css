@@ -38,6 +38,12 @@ h4{
     color: #fff;
     font-size: 150%;
 }
+h5{
+    color:#016dcb;
+    font-size: 95%;
+    font-weight:lighter;
+    align-self: center;
+}
 
 h6{
     font-size: 14px;
@@ -46,10 +52,90 @@ h6{
 }
 
 /* alignments & layout */
+.details{
+    width: 65%;
+    position: absolute;
+    top:400px;
+    padding: 15px;
+    margin:40 px;
+    align-items: center;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 
+}
+.description-main{
+    width:100%;
+    padding:20px;
+    position: absolute;
+    top: 70px;
+    margin: 30px;
+
+}
+.upload-area{
+    width: 60%;
+    background: #FFF;
+    margin: 40px;
+    padding: 40px 20px 40px 20px;
+    border-radius: 6px; 
+    position:relative;
+    top:150px;
+    left: 20%;
+    right: 20%;
+    height:16em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.select-images{
+    width: 80%;
+    margin: 50px;
+    padding: 40px 10px 40px 10px;
+    position: absolute;
+    right: 50px;
+    top:75px;
+    height:18em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, 270%);
+  }
+
+
+label{
+    color: #f5f5f5;
+    font-size: medium;
+    font-weight: 300;
+    align-self: flex-start;
+    margin: 20px 10px 5px 10px ;
+    display: block;
+}
 .right-align{
     float:right;
     
+}
+
+.details .input{
+    height: 45px;
+    width: 150% !important;
+    /* position: relative; */
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid#CACACA;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 12px;
+    margin: 10px;
+    max-width: 600px;
 }
 
 .center-align{
@@ -140,9 +226,12 @@ h6{
 }
 
 #editordiv{
+    position: relative ;
+    top: 80px;
     display: flex;
     width: 60%;
-    margin: 30px 30px ;
+    /* margin-top: 100px; */
+    margin: 100px 30px ;
     justify-content:space-between;
     align-content: center;
 
@@ -151,9 +240,22 @@ h6{
     margin-top: 50px;
     margin-left: 50px;
     display: block;
-    width:100vh;
+    width:80%;
+}
+#editorbutton{
+    width: 200px;
+    padding: 10px 10px;
 }
 
+.galllery{
+    width: 30%;
+    /* margin: 1.6666666%; */
+    margin: calc(10%/6);
+    border: 1px solid white;
+}
+.gallerydiv{
+    margin-top: 200px;
+}
 /* text properties */
 
 .logo{

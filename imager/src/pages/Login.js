@@ -14,9 +14,15 @@ export default function Login() {
         console.log(`email: ${email}  password ${password} `)
         Axios.post("http://localhost:8000/api/users/login/",{email:email,password:password})
         .then(function(response){
-            console.log(response);
-            navigate('/')
+            console.log("data",response.data.role);
             
+           //      navigate('/')
+            if (response.data.role === "admin") {
+                navigate('/admin')
+            } else {
+                navigate('/')
+                
+            }
         })
         .catch((e)=>console.log(e)) 
 

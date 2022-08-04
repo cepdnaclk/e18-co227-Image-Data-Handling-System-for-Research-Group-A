@@ -27,7 +27,6 @@ export default function Upload() {
           <button className='normal medium var2'>Browse</button>
           <br />
           <h5>Or drag and drop here</h5>
-          <img src="assets/images/upload.png" className='cross-image' alt="upload-images"></img>
         </section>
 
         <section className="details">

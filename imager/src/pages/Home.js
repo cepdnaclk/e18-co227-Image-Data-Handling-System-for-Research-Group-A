@@ -1,19 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useState ,useEffect } from 'react';
+
 
 export default function Home() {
 
-    const [apiResponse,setapiResponse] = useState("") ;
-
-    useEffect(()=>{
-       //console.log("test1")
-      fetch('http://localhost:8000/')
-      .then((res) => res.text())
-      .then((res) => setapiResponse(res))
-      .catch((e)=>console.log(e));
-      
-    },[])
+    
 
 
   return ( 
@@ -38,7 +29,7 @@ export default function Home() {
         <section className="description">
             <h2>Leave your images to us</h2>
             <h4>Upload, Store and Annotate images in your Research</h4>
-            <div>{"api " + apiResponse}</div>
+           
         </section>
 
         <section className="design column-left">
@@ -47,9 +38,9 @@ export default function Home() {
               
         <section>
             <div className="mainpagefunctions">
-                <Link to="/Upload"><button className="tile large var1">Get image</button></Link>
+                <Link to="/Upload"><button className="tile large var1">Upload image</button></Link>
                 <Link to="/View"> <button className="tile large var1">View</button></Link>
-                <Link to="#"><button className="tile large var1">Annotate</button></Link>
+                <Link to="/admin"><button className="tile large var1">Admin Panel</button></Link>
                 <Link to="#"><button className="tile large var1">Export</button></Link>
                 <br />
                     <button className="button normal var1 medium help-button">Need Help?</button>

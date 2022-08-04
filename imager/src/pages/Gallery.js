@@ -1,22 +1,7 @@
 import React from 'react'
-import { Link,useNavigate } from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 
 export default function View() {
-
-  const navigate = useNavigate()
-
-  var URLnew ;
-
-  const handleClick = () => {
-   
-    console.log(URLnew)
-    navigate('/Editor',{state:{url:URLnew}})
-
-
-  }
-
-
   return (
     <React.Fragment>
       <section className="header">
@@ -37,62 +22,26 @@ export default function View() {
           <h2 align="center">View Images</h2>
         </section>
 
-        <div className='gallerydiv'>
+        <div>
         
-            <img className='galllery' src="assets/images/Oral/166636_2200-732x549.jpg"
-             onClick={ ()=>{
-               URLnew = "assets/images/Oral/166636_2200-732x549.jpg"
-               handleClick();
-              }}  /><img
-              className='galllery'   src="assets/images/Oral/istockphoto-992047916-612x612.jpg"
-             onClick={ ()=>{
-              
-              URLnew = "assets/images/Oral/istockphoto-992047916-612x612.jpg"
-               handleClick();
-             }} /><img
-              className='galllery'  src="assets/images/Oral/12096tn.jpg" 
-              onClick={ ()=>{
-                URLnew = "assets/images/Oral/12096tn.jpg"
-                handleClick();
-              }} />
+            <img src="http://c1.staticflickr.com/9/8450/8026519634_f33f3724ea_b.jpg"/><img
+                src="http://c2.staticflickr.com/8/7218/7209301894_c99d3a33c2_h.jpg"/><img
+                src="http://c2.staticflickr.com/8/7231/6947093326_df216540ff_b.jpg"/>
 
         
-            <img className='galllery' src="assets/images/Oral/istockphoto-1086539760-612x612.jpg"
-             onClick={()=>{
-              URLnew = "assets/images/Oral/istockphoto-1086539760-612x612.jpg"
-              handleClick();
-             }} /><img
-              className='galllery'   src="assets/images/Oral/slide_5.jpg"
-              onClick={()=>{
-                URLnew = "assets/images/Oral/slide_5.jpg"
-                handleClick();
-
-              }} /><img
-              className='galllery'   src="assets/images/Oral/slide_5.jpg"
-              onClick={()=>{
-                URLnew = "assets/images/Oral/slide_5.jpg"
-                handleClick();
-              }}/>
+            <img src="http://c1.staticflickr.com/9/8788/17367410309_78abb9e5b6_b.jpg"/><img
+                src="http://c2.staticflickr.com/6/5814/20700286354_762c19bd3b_b.jpg"/><img
+                src="http://c2.staticflickr.com/6/5647/21137202535_404bf25729_b.jpg"/>
 
             
-            <img  className='galllery' src="assets/images/Oral/21765-parts-of-the-mouth.jpg"
-             onClick={ ()=>{
-              URLnew = "assets/images/Oral/21765-parts-of-the-mouth.jpg"
-              handleClick();
-             }} /><img
-              className='galllery'   src="assets/images/Oral/Figure-1-Traumatic-Ulcer-SPL.webp"
-              onClick={ ()=>{
-                URLnew = "assets/images/Oral/Figure-1-Traumatic-Ulcer-SPL.webp"
-                handleClick();
-               }}/><img
-              className='galllery'   src="assets/images/Oral/Early-Signs-of-Oral-Cancer.jpg"
-              onClick={ ()=>{
-                URLnew = "assets/images/Oral/Early-Signs-of-Oral-Cancer.jpg"
-                handleClick();
-               }}/>
+            <img src="http://c2.staticflickr.com/6/5588/14991687545_5c8e1a2e86_b.jpg"/><img
+                src="http://c2.staticflickr.com/4/3888/14878097108_5997041006_b.jpg"/><img
+                src="http://c2.staticflickr.com/8/7579/15482110477_0b0e9e5421_b.jpg"/>
 
         </div>
 
+      
+        
     
     </React.Fragment>
     

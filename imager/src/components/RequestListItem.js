@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { ListGroupItem } from "react-bootstrap";
+import Axios from 'axios'
 
 
 
@@ -47,8 +48,27 @@ export default function RequestListItem(props,num){
             </ListGroup>
             </Col>
             <Col sm={4} >
-            <Button variant="success" className="reqlistitemButton" onClick={()=> console.log(`email ${email}`)}>Accept</Button>
-            <Button variant="danger" className="reqlistitemButton" > Decline</Button>
+            <Button variant="success" className="reqlistitemButton" onClick={()=> {
+                console.log(`id ${id}`)
+                Axios.post(`http://localhost:8000/api/admin/accept/${id}`)
+                .then(function(response){
+                    console.log(response);
+                    
+                })
+                .catch((e)=>console.log(e)) 
+
+                }}>Accept</Button>
+                
+            <Button variant="danger" className="reqlistitemButton" onClick={()=> {
+                console.log(`id ${id}`)
+                Axios.post(`http://localhost:8000/api/admin/delete/${id}`)
+                .then(function(response){
+                    console.log(response);
+                    
+                })
+                .catch((e)=>console.log(e)) 
+
+                }}> Decline</Button>
             </Col>
             </Row>
         </Container>
