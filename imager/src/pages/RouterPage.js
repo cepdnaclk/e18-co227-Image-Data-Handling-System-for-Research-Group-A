@@ -6,6 +6,7 @@ import Signup from './Signup'
 import Login from './Login'
 import Upload from './Upload'
 import View from './View'
+import Editor from './Editor'
 
 
 export default function RouterPage() {
@@ -18,6 +19,7 @@ export default function RouterPage() {
                 <Route path="/Login" element= { <Login />} />
                 <Route path="/Upload" element = { <Upload />} />
                 <Route path="/View" element = { <View/>} />
+                <Route path="/Editor" element = { <View/>} />
             </Routes>
         </Router>
     </div>
