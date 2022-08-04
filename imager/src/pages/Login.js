@@ -12,7 +12,7 @@ export default function Login() {
     
    const  loginsubmit = () =>{
         console.log(`email: ${email}  password ${password} `)
-        Axios.post("http://localhost:5000/testapi/",{email:email,password:password})
+        Axios.post("http://localhost:8000/api/users/login",{email:email,password:password})
         .then(function(response){
             console.log(response);
             navigate('/')

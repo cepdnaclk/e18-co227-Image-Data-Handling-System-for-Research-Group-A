@@ -1,14 +1,17 @@
-/* 
+/*
  * Project: CO227 Computer Engineering Project
  * Github Repository: https://github.com/e18-co227-Image-Data-Handling-System-for-Research-Group-A
- * Authors: 
+ * Authors:
  *  - Kavinda Karunarathne (E/18/170)
  *  - Denuwan Weerarathne (E/18/382)
  *  - Nimuthu Wijerathne (E/18/398)
  */
-const router = require('express').Router();
-const {registerUser, loginUser} = require('../controllers/userAuthController')
-const User = require('../models/userModel')
+const router = require("express").Router();
+const {
+  registerUser,
+  loginUser,
+} = require("../controllers/userAuthController");
+const User = require("../models/userModel");
 // const bcrypt = require('bcrypt')
 
 /*
@@ -43,10 +46,10 @@ router.post('/initial', async(req,res)=>{
 }) 
 */
 
-// sign up request 
+// sign up request
 router.post("/signup", registerUser);
 
 // log in
-router.post("/login", loginUser)
+router.post("/login", loginUser);
 
 module.exports = router;

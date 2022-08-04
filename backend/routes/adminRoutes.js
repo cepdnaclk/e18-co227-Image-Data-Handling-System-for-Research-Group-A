@@ -16,12 +16,12 @@ const {
 const jwtAuth = require('../middlewares/checkAuth.js')
 
 // get all requests
-router.get('/requests', jwtAuth, getAllRequests)
+router.get('/requests', jwtAuth, getAllRequests);
 
 // delete requests
-router.delete("/delete/:id",jwtAuth, deleteRequest)
+router.delete("/delete/:id",jwtAuth, deleteRequest);
 
 // accept requests
-router.post("/accept/:id", jwtAuth, acceptRequest)
+router.post("/accept/:id", jwtAuth, acceptRequest);
 
 module.exports = router;
